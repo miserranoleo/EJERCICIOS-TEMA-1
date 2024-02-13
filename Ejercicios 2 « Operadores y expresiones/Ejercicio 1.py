@@ -5,18 +5,10 @@
 #Si el primero es mayor que el segundo
 #Si el segundo es mayor o igual que el primero
 
-# Leer dos números por teclado
-numero_1 = float(input("Ingrese el primer número: "))
-numero_2 = float(input("Ingrese el segundo número: "))
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
 
-# Determinar aspectos
-son_iguales = numero_1 == numero_2
-son_diferentes = numero_1 != numero_2
-primero_mayor_que_segundo = numero_1 > numero_2
-segundo_mayor_igual_que_primero = numero_2 >= numero_1
-
-# Mostrar resultados
-print("Son iguales:", son_iguales)
-print("Son diferentes:", son_diferentes)
-print("El primero es mayor que el segundo:", primero_mayor_que_segundo)
-print("El segundo es mayor o igual que el primero:", segundo_mayor_igual_que_primero)
+print("Los dos números son iguales:", num1 == num2)
+print("Los dos números son diferentes:", num1 != num2)
+print("El primero es mayor que el segundo:", num1 > num2)
+print("El segundo es mayor o igual que el primero:", num2 >= num1)
