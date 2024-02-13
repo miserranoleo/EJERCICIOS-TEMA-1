@@ -1,18 +1,22 @@
-#Ejercicio 1
-#Identifica el tipo de dato (int, float, string o list) de los siguientes valores literales:
+# Función para identificar el tipo de dato de un valor literal
+def identificar_tipo(valor):
+    return type(valor).__name__
 
-a= "Hola Mundo"     
-b= [1, 10, 100]      
-c= -25              
-d= 1.167             
-e= ["Hola", "Mundo"] 
-f= ' '    
+# Valores literales
+valores = [
+    "Hola Mundo",
+    [1, 10, 100],
+    -25,
+    1.167,
+    ["Hola", "Mundo"],
+    ' '
+]
 
-print(type(a))  # str
-print(type(b))  # list
-print(type(c))  # int
-print(type(d))  # float
-print(type(e))  # list
-print(type(f)); # str
+# Identificar el tipo de dato de cada valor literal
+tipos = list(map(identificar_tipo, valores))
+
+# Imprimir los tipos de datos
+for tipo in tipos:
+    print(tipo)
 
 
