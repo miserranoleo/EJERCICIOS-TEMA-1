@@ -4,5 +4,11 @@ def agregar_una_vez(lista, el):
             raise ValueError(f"Error: Imposible añadir elementos duplicados => {el}.")
         else:
             lista.append(el)
-    except ValueError as error:
-        print(error)
+    except ValueError as e:
+        print(e)
+
+elementos = [1, 5, -2]
+agregar_una_vez(elementos, 10)
+agregar_una_vez(elementos, -2)
+agregar_una_vez(elementos, "Hola")
+print(elementos)
